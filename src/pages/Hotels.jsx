@@ -13,7 +13,7 @@ export default function Hotels() {
       const fetchHotels = async () => {
         try {
           const token = localStorage.getItem("token");
-          const res = await fetch("http://localhost:8000/api/hotels", {
+          const res = await fetch("https://red-product-back-um36.onrender.com/api/hotels", {
             headers: {
               Authorization: `Bearer ${token}`,
             },

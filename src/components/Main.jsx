@@ -16,7 +16,7 @@ export default function Main() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await fetch(`http://localhost:8000/api/users/allusers`, {
+      const res = await fetch(`https://red-product-back-um36.onrender.com/api/users/allusers`, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
@@ -45,7 +45,7 @@ useEffect(() => {
   const fetchHotels = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:8000/api/hotels", {
+      const res = await fetch("https://red-product-back-um36.onrender.com/api/hotels", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

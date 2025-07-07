@@ -45,7 +45,6 @@ export default function Sidebar({ isOpen, setIsOpen }) {
 }
 
 const Container = styled.div`
-  border: 1px solid red;
   width: 220px;
   background: #2e2e2e;
   color: white;
