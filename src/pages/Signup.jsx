@@ -37,7 +37,7 @@ export default function SignUp() {
     setLoading(true);
 
     try {
-      const response = await fetch(`https://red-product-back-um36.onrender.com/api/users/register`, {
+      const response = await fetch(`https://red-product-back-xfqn.onrender.com/api/users/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

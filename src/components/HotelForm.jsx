@@ -31,7 +31,7 @@ export default function HotelForm() {
     if (photo) formData.append('photo', photo);
 
     try {
-      const response = await fetch('http://localhost:8000/api/hotels', {
+      const response = await fetch('https://red-product-back-xfqn.onrender.com/api/hotels', {
         method: 'POST',
         body: formData
       });

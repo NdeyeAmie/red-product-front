@@ -60,14 +60,14 @@ export default function HotelList() {
   useEffect(() => {
     const fetchHotels = async () => {
       try {
-        const res = await fetch('https://red-product-back-um36.onrender.com/api/hotels');
+        const res = await fetch('https://red-product-back-xfqn.onrender.com/api/hotels');
         const data = await res.json();
         // On ne garde que les champs utiles
         const trimmed = data.map(h => ({
           nom: h.nom,
           addresse: h.adresse,
           prix: h.prix,
-          image: h.photo ? `https://red-product-back-um36.onrender.com/${h.photo}` : null
+          image:  h.photo || null
         }));
         setHotels(trimmed);
       } catch (err) {
